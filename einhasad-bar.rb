@@ -5,13 +5,13 @@
 class EinhasadBar < Formula
   desc "macOS menu-bar manager for local dev stacks, configured via YAML"
   homepage "https://github.com/einhasad/einhasad-bar"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/einhasad/einhasad-bar/releases/download/v0.1.0/einhasad-bar_0.1.0_darwin_arm64.tar.gz"
-    sha256 "7cd2b6a935dc39d0f54bba6cc7ec004dde61430af221b5f0b3195f65db2fcc12"
+    url "https://github.com/einhasad/einhasad-bar/releases/download/v0.1.1/einhasad-bar_0.1.1_darwin_arm64.tar.gz"
+    sha256 "d6253ea0124d4f89b165f7134ed19a7238d337f725ab6b45e3d4d60127cb50e2"
 
     define_method(:install) do
       bin.install "einhasad-bar"
